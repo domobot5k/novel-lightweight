@@ -191,21 +191,6 @@ const getSuggestionItems = ({ query }: { query: string }) => {
       description: "Upload an image from your computer.",
       searchTerms: ["photo", "picture", "media"],
       icon: <ImageIcon size={18} />,
-      command: ({ editor, range }: CommandProps) => {
-        editor.chain().focus().deleteRange(range).run();
-        // upload image
-        const input = document.createElement("input");
-        input.type = "file";
-        input.accept = "image/*";
-        input.onchange = async () => {
-          if (input.files?.length) {
-            const file = input.files[0];
-            const pos = editor.view.state.selection.from;
-            startImageUpload(file, editor.view, pos);
-          }
-        };
-        input.click();
-      },
     },
   ].filter((item) => {
     if (typeof query === "string" && query.length > 0) {
@@ -248,7 +233,7 @@ const CommandList = ({
 }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const { completionApi } = useContext(NovelContext);
+  const { completionApi, handleUserImageUpload } = useContext(NovelContext);
 
   const { complete, isLoading } = useCompletion({
     id: "novel",
@@ -288,12 +273,25 @@ const CommandList = ({
               offset: 1,
             })
           );
+        } else if (item.title === "Image") {
+          editor.chain().focus().deleteRange(range).run();
+          const input = document.createElement("input");
+          input.type = "file";
+          input.accept = "image/*";
+          input.onchange = async () => {
+            if (input.files?.length) {
+              const file = input.files[0];
+              const pos = editor.view.state.selection.from;
+              startImageUpload(file, editor.view, pos, handleUserImageUpload);
+            }
+          };
+          input.click();
         } else {
           command(item);
         }
       }
     },
-    [complete, isLoading, command, editor, items]
+    [complete, isLoading, command, editor, items, range]
   );
 
   useEffect(() => {

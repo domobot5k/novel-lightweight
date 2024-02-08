@@ -22,6 +22,14 @@ export default function Editor() {
             setSaveStatus("Saved");
           }, 500);
         }}
+        // eslint-disable-next-line no-unused-vars
+        handleImageUpload={(file) => {
+          return new Promise((resolve) => {
+            setTimeout(() => {
+              resolve(`https://offthreadr.com/community-orange.png`);
+            }, 2000);
+          });
+        }}
       />
     </div>
   );

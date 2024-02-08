@@ -55,7 +55,13 @@ function findPlaceholder(state: EditorState, id: {}) {
   return found.length ? found[0].from : null;
 }
 
-export function startImageUpload(file: File, view: EditorView, pos: number) {
+export function startImageUpload(
+  file: File,
+  view: EditorView,
+  pos: number,
+  // eslint-disable-next-line no-unused-vars
+  handleUserImageUpload?: (file: File) => Promise<string | File>
+) {
   // check if the file is an image
   if (!file.type.includes("image/")) {
     toast.error("File type not supported.");
@@ -87,30 +93,76 @@ export function startImageUpload(file: File, view: EditorView, pos: number) {
     view.dispatch(tr);
   };
 
-  handleImageUpload(file).then((src) => {
-    const { schema } = view.state;
+  if (handleUserImageUpload) {
+    CustomUploaderWrapper(file, handleUserImageUpload).then((src) => {
+      const { schema } = view.state;
 
-    let pos = findPlaceholder(view.state, id);
-    // If the content around the placeholder has been deleted, drop
-    // the image
-    if (pos == null) return;
+      let pos = findPlaceholder(view.state, id);
+      // If the content around the placeholder has been deleted, drop
+      // the image
+      if (pos == null) return;
 
-    // Otherwise, insert it at the placeholder's position, and remove
-    // the placeholder
+      // Otherwise, insert it at the placeholder's position, and remove
+      // the placeholder
+      const imageSrc = src;
 
-    // When BLOB_READ_WRITE_TOKEN is not valid or unavailable, read
-    // the image locally
-    const imageSrc = typeof src === "object" ? reader.result : src;
+      const node = schema.nodes.image.create({ src: imageSrc });
+      const transaction = view.state.tr
+        .replaceWith(pos, pos, node)
+        .setMeta(uploadKey, { remove: { id } });
+      view.dispatch(transaction);
+    });
+  } else {
+    handleImageUpload(file).then((src) => {
+      const { schema } = view.state;
 
-    const node = schema.nodes.image.create({ src: imageSrc });
-    const transaction = view.state.tr
-      .replaceWith(pos, pos, node)
-      .setMeta(uploadKey, { remove: { id } });
-    view.dispatch(transaction);
-  });
+      let pos = findPlaceholder(view.state, id);
+      // If the content around the placeholder has been deleted, drop
+      // the image
+      if (pos == null) return;
+
+      // Otherwise, insert it at the placeholder's position, and remove
+      // the placeholder
+
+      // When BLOB_READ_WRITE_TOKEN is not valid or unavailable, read
+      // the image locally
+      const imageSrc = typeof src === "object" ? reader.result : src;
+
+      const node = schema.nodes.image.create({ src: imageSrc });
+      const transaction = view.state.tr
+        .replaceWith(pos, pos, node)
+        .setMeta(uploadKey, { remove: { id } });
+      view.dispatch(transaction);
+    });
+  }
 }
 
-export const handleImageUpload = (file: File) => {
+export const CustomUploaderWrapper = (
+  file: File,
+  // eslint-disable-next-line no-unused-vars
+  handleUserImageUpload: (file: File) => Promise<string | File>
+) => {
+  return new Promise((resolve) => {
+    toast.promise(
+      handleUserImageUpload(file).then((src) => {
+        if (typeof src === "string") {
+          let image = new Image();
+          image.src = src;
+          image.onload = () => {
+            resolve(src);
+          };
+        }
+      }),
+      {
+        loading: "Uploading image...",
+        success: "Image uploaded successfully.",
+        error: (e) => e.message,
+      }
+    );
+  });
+};
+
+export const handleImageUpload = (file: File): Promise<string | File> => {
   // upload to Vercel Blob
   return new Promise((resolve) => {
     toast.promise(

@@ -28,6 +28,7 @@ export default function Editor({
   debounceDuration = 750,
   storageKey = "novel__content",
   disableLocalStorage = false,
+  handleImageUpload,
 }: {
   /**
    * The API route to use for the OpenAI completion API.
@@ -81,6 +82,8 @@ export default function Editor({
    * Defaults to false.
    */
   disableLocalStorage?: boolean;
+  // eslint-disable-next-line no-unused-vars
+  handleImageUpload?: (file: File) => Promise<string>;
 }) {
   const [content, setContent] = useLocalStorage(storageKey, defaultValue);
 
@@ -205,6 +208,7 @@ export default function Editor({
     <NovelContext.Provider
       value={{
         completionApi,
+        handleUserImageUpload: handleImageUpload,
       }}
     >
       <div
