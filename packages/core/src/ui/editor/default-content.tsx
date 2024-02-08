@@ -70,7 +70,7 @@ export const defaultEditorContent = {
     {
       type: "codeBlock",
       attrs: { language: null },
-      content: [{ type: "text", text: "npm i novel" }],
+      content: [{ type: "text", text: "npm i novel-lightweight" }],
     },
     {
       type: "heading",
@@ -83,7 +83,7 @@ export const defaultEditorContent = {
       content: [
         {
           type: "text",
-          text: 'import { Editor } from "novel";\n\nexport default function App() {\n  return (\n     <Editor />\n  )\n}',
+          text: 'import { Editor } from "novel-lightweight";\n\nexport default function App() {\n  return (\n     <Editor />\n  )\n}',
         },
       ],
     },
@@ -170,7 +170,7 @@ export const defaultEditorContent = {
                     {
                       type: "link",
                       attrs: {
-                        href: "https://github.com/steven-tey/novel",
+                        href: "https://github.com/Ankur-Datta-4/novel-lightweight",
                         target: "_blank",
                         class:
                           "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
@@ -197,7 +197,7 @@ export const defaultEditorContent = {
                     {
                       type: "link",
                       attrs: {
-                        href: "https://www.npmjs.com/package/novel",
+                        href: "https://www.npmjs.com/package/novel-lightweight",
                         target: "_blank",
                         class:
                           "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
@@ -206,33 +206,6 @@ export const defaultEditorContent = {
                   ],
                   text: "NPM package",
                 },
-              ],
-            },
-          ],
-        },
-        {
-          type: "taskItem",
-          attrs: { checked: false },
-          content: [
-            {
-              type: "paragraph",
-              content: [
-                {
-                  type: "text",
-                  marks: [
-                    {
-                      type: "link",
-                      attrs: {
-                        href: "https://vercel.com/templates/next.js/novel",
-                        target: "_blank",
-                        class:
-                          "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
-                      },
-                    },
-                  ],
-                  text: "Deploy your own",
-                },
-                { type: "text", text: " to Vercel" },
               ],
             },
           ],

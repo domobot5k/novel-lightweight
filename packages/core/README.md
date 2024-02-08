@@ -22,7 +22,7 @@
 ## Introduction
 
 [Novel](https://novel.sh/) is a Notion-style WYSIWYG editor with AI-powered autocompletions by Steven-tey.
-This is a fork with the aim of removing Vercel-blob, analytics so that your WYSIWYG editor remains lightweight!
+This is a fork with the aim of removing Vercel-blob, analytics so that your WYSIWYG editor remains lightweight and customized out of vercels's services
 
 <br />
 
@@ -77,9 +77,7 @@ The `Editor` is a React component that takes in the following props:
 | `disableLocalStorage` | `boolean`                      | Enabling this option will prevent read/write content from/to local storage.                                                                                                                | `false`                                                                                                                             |
 | `handleImageUpload`   | `(file:File)=>Promise<string>` | [Optional] You can have your custom upload handler for images added. Takes in File as input and should return a promise which resolves to the url of the image                             | `null`                                                                                                                              |
 
-> **Note**: Make sure to define an API endpoint that matches the `completionApi` prop (default is `/api/generate`). This is needed for the AI autocompletions to work. Here's an example: https://github.com/steven-tey/novel/blob/main/apps/web/app/api/generate/route.ts
-
-Here's an example application: https://github.com/steven-tey/novella
+> **Note**: Make sure to define an API endpoint that matches the `completionApi` prop (default is `/api/generate`). This is needed for the AI autocompletions to work. Here's an example: https://github.com/Ankur-Datta-4/novel-lightweight/blob/main/apps/web/app/api/generate/route.ts
 
 ## Setting Up Locally
 
@@ -87,8 +85,6 @@ To set up Novel locally, you'll need to clone the repository and set up the foll
 
 - [OPTIONAL] `OPENAI_API_KEY` – your OpenAI API key (you can get one [here](https://platform.openai.com/account/api-keys))
 - [OPTIONAL] `BLOB_READ_WRITE_TOKEN` – your Vercel Blob read/write token (currently [still in beta](https://vercel.com/docs/storage/vercel-blob/quickstart#quickstart), but feel free to [sign up on this form](https://vercel.fyi/blob-beta) for access)
-
-If you've deployed this to Vercel, you can also use [`vc env pull`](https://vercel.com/docs/cli/env#exporting-development-environment-variables) to pull the environment variables from your Vercel project.
 
 To run the app locally, you can run the following commands:
 
