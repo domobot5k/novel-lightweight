@@ -1,6 +1,6 @@
 {
   "name": "novel-lightweight",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "(Fork of Novel.sh) A No-nonsense Notion-style WYSISWYG editor for your react/Nextjs app",
   "license": "Apache-2.0",
   "main": "./dist/index.js",
