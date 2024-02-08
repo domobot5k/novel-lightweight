@@ -4,7 +4,7 @@ export const defaultEditorContent = {
     {
       type: "heading",
       attrs: { level: 2 },
-      content: [{ type: "text", text: "Introducing Novel" }],
+      content: [{ type: "text", text: "Introducing Lightweight Novel" }],
     },
     {
       type: "paragraph",
@@ -15,7 +15,7 @@ export const defaultEditorContent = {
             {
               type: "link",
               attrs: {
-                href: "https://github.com/steven-tey/novel",
+                href: "https://github.com/Ankur-Datta-4/novel-lightweight",
                 target: "_blank",
                 class:
                   "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",

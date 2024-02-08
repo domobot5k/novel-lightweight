@@ -26,7 +26,6 @@ import {
 } from "lucide-react";
 import { LoadingCircle } from "@/ui/icons";
 import { toast } from "sonner";
-import va from "@vercel/analytics";
 import { Magic } from "@/ui/icons";
 import { getPrevText } from "@/lib/editor";
 import { startImageUpload } from "@/ui/editor/plugins/upload-images";
@@ -241,7 +240,6 @@ const CommandList = ({
     onResponse: (response) => {
       if (response.status === 429) {
         toast.error("You have reached your request limit for the day.");
-        va.track("Rate Limit Reached");
         return;
       }
       editor.chain().focus().deleteRange(range).run();
@@ -261,9 +259,6 @@ const CommandList = ({
   const selectItem = useCallback(
     (index: number) => {
       const item = items[index];
-      va.track("Slash Command Used", {
-        command: item.title,
-      });
       if (item) {
         if (item.title === "Continue writing") {
           if (isLoading) return;

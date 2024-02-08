@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Editor as NovelEditor } from "novel";
+import { Editor as NovelEditor } from "novel-lightweight";
 
 export default function Editor() {
   const [saveStatus, setSaveStatus] = useState("Saved");
