@@ -10,7 +10,6 @@ import React, {
 import { Editor, Range, Extension } from "@tiptap/core";
 import Suggestion from "@tiptap/suggestion";
 import { ReactRenderer } from "@tiptap/react";
-import { useCompletion } from "ai/react";
 import tippy from "tippy.js";
 import {
   Heading1,
@@ -26,8 +25,6 @@ import {
 } from "lucide-react";
 import { LoadingCircle } from "@/ui/icons";
 import { toast } from "sonner";
-import { Magic } from "@/ui/icons";
-import { getPrevText } from "@/lib/editor";
 import { startImageUpload } from "@/ui/editor/plugins/upload-images";
 import { NovelContext } from "../provider";
 
@@ -73,13 +70,7 @@ const Command = Extension.create({
 });
 
 const getSuggestionItems = ({ query }: { query: string }) => {
-  return [
-    {
-      title: "Continue writing",
-      description: "Use AI to expand your thoughts.",
-      searchTerms: ["gpt"],
-      icon: <Magic className="novel-w-7" />,
-    },
+  return [    
     {
       title: "Text",
       description: "Just start typing with plain text.",
@@ -232,62 +223,33 @@ const CommandList = ({
 }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const { completionApi, handleUserImageUpload } = useContext(NovelContext);
-
-  const { complete, isLoading } = useCompletion({
-    id: "novel",
-    api: completionApi,
-    onResponse: (response) => {
-      if (response.status === 429) {
-        toast.error("You have reached your request limit for the day.");
-        return;
-      }
-      editor.chain().focus().deleteRange(range).run();
-    },
-    onFinish: (_prompt, completion) => {
-      // highlight the generated text
-      editor.commands.setTextSelection({
-        from: range.from,
-        to: range.from + completion.length,
-      });
-    },
-    onError: (e) => {
-      toast.error(e.message);
-    },
-  });
+  const { handleUserImageUpload } = useContext(NovelContext);
 
   const selectItem = useCallback(
-    (index: number) => {
-      const item = items[index];
-      if (item) {
-        if (item.title === "Continue writing") {
-          if (isLoading) return;
-          complete(
-            getPrevText(editor, {
-              chars: 5000,
-              offset: 1,
-            })
-          );
-        } else if (item.title === "Image") {
-          editor.chain().focus().deleteRange(range).run();
-          const input = document.createElement("input");
-          input.type = "file";
-          input.accept = "image/*";
-          input.onchange = async () => {
-            if (input.files?.length) {
-              const file = input.files[0];
-              const pos = editor.view.state.selection.from;
-              startImageUpload(file, editor.view, pos, handleUserImageUpload);
-            }
-          };
-          input.click();
-        } else {
-          command(item);
-        }
+  (index: number) => {
+    const item = items[index];
+    if (item) {
+      if (item.title === "Image") {
+        editor.chain().focus().deleteRange(range).run();
+        const input = document.createElement("input");
+        input.type = "file";
+        input.accept = "image/*";
+        input.onchange = async () => {
+          if (input.files?.length) {
+            const file = input.files[0];
+            const pos = editor.view.state.selection.from;
+            startImageUpload(file, editor.view, pos, handleUserImageUpload);
+          }
+        };
+        input.click();
+      } else {
+        command(item);
       }
-    },
-    [complete, isLoading, command, editor, items, range]
-  );
+    }
+  },
+  [command, editor, items, range, handleUserImageUpload]
+);
+
 
   useEffect(() => {
     const navigationKeys = ["ArrowUp", "ArrowDown", "Enter"];
