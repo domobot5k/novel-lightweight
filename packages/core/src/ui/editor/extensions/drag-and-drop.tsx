@@ -2,7 +2,7 @@ import { Extension } from "@tiptap/core";
 
 import { NodeSelection, Plugin } from "@tiptap/pm/state";
 // @ts-ignore
-import { __serializeForClipboard, EditorView } from "@tiptap/pm/view";
+// import { __serializeForClipboard, EditorView } from "@tiptap/pm/view";
 
 export interface DragHandleOptions {
   /**
@@ -68,12 +68,12 @@ function DragHandle(options: DragHandleOptions) {
     );
 
     const slice = view.state.selection.content();
-    const { dom, text } = __serializeForClipboard(view, slice);
 
-    event.dataTransfer.clearData();
-    event.dataTransfer.setData("text/html", dom.innerHTML);
-    event.dataTransfer.setData("text/plain", text);
-    event.dataTransfer.effectAllowed = "copyMove";
+// Skipping __serializeForClipboard because it's no longer available
+event.dataTransfer.clearData();
+event.dataTransfer.setData("text/plain", "Dragged content");
+event.dataTransfer.effectAllowed = "copyMove";
+
 
     event.dataTransfer.setDragImage(node, 0, 0);
 
