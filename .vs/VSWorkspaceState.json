@@ -1,6 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\apps",
+    "\\apps\\web",
+    "\\apps\\web\\app",
+    "\\apps\\web\\app\\api",
+    "\\apps\\web\\lib",
+    "\\apps\\web\\lib\\editor",
+    "\\apps\\web\\lib\\editor\\bubble-menu",
+    "\\apps\\web\\lib\\editor\\plugins",
+    "\\apps\\web\\ui"
   ],
   "PreviewInSolutionExplorer": true
 }

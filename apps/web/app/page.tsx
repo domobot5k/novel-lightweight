@@ -1,19 +1,29 @@
-import { Github } from "@/ui/icons";
-import Menu from "@/ui/menu";
-import Editor from "@/ui/editor";
+"use client";
 
-export default function Page() {
+import RichTextEditor from "@/ui/RichTextEditor";
+import { useState } from "react";
+
+export default function EditorTestPage() {
+  const [content, setContent] = useState("<p>Hello from iFStudio!</p>");
+
   return (
-    <div className="flex min-h-screen flex-col items-center sm:px-5 sm:pt-[calc(20vh)]">
-      <a
-        href="https://github.com/steven-tey/novel"
-        target="_blank"
-        className="absolute bottom-5 left-5 z-10 max-h-fit rounded-lg p-2 transition-colors duration-200 hover:bg-stone-100 sm:bottom-auto sm:top-5"
-      >
-        <Github />
-      </a>
-      <Menu />
-      <Editor />
-    </div>
+    <main className="p-6 bg-white text-black min-h-screen">
+      <h1 className="text-2xl font-bold mb-4">?? Editor Test</h1>
+
+      <div className="border rounded p-4 bg-white text-black shadow-sm">
+        <RichTextEditor
+          content={content}
+          onUpdate={(html) => {
+            setContent(html);
+            console.log("Editor updated:", html);
+          }}
+        />
+      </div>
+
+      <p className="mt-6 text-sm text-gray-700">Live HTML output:</p>
+      <pre className="mt-2 p-3 border rounded bg-gray-100 text-xs text-gray-800 whitespace-pre-wrap">
+        {content}
+      </pre>
+    </main>
   );
 }

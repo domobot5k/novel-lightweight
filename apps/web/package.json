@@ -1,8 +1,19 @@
 {
-  "name": "novel-next-app",
-  "version": "0.1.0",
+  "name": "web",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A Next.js application for the Novel project, featuring a rich text editor and AI integration.",
+  "keywords": [
+    "nextjs",
+    "react",
+    "tiptap",
+    "ai",
+    "novel"
+  ],
+  "author": "Your Name <you@example.com>",
   "private": true,
   "scripts": {
+    "build:bundle": "rollup -c rollup.config.cjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -53,6 +64,12 @@
     "use-debounce": "^9.0.3"
   },
   "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.1",
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.44.2",
+    "rollup-plugin-esbuild": "^6.2.1",
     "tailwind-config": "workspace:*"
   }
 }

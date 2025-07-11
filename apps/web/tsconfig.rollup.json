@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // don't stop on type errors, we just want to transpile
+    "noEmitOnError": false,
+    // skip type-checking of imported libs
+    "skipLibCheck": true,
+    // no .d.ts output
+    "declaration": false
+  },
+  // only compile the editor sources
+  "include": ["lib/**/*"],
+  // explicitly ignore your Next "app/" folder, pages, etc.
+  "exclude": ["app/**/*", "pages/**/*", "node_modules"]
+}
