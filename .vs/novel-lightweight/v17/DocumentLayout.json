@@ -3,20 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\lib\\editor\\extensions\\slash-command.tsx||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:apps\\web\\lib\\editor\\extensions\\slash-command.tsx||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iF Studio\\Assets\\StreamingAssets\\editor\\index.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\ui\\RichTextEditor.tsx||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:apps\\web\\ui\\RichTextEditor.tsx||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\rollup.config.cjs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:apps\\web\\rollup.config.cjs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\app\\page.tsx||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:apps\\web\\app\\page.tsx||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\lib\\vanilla-editor.ts||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:apps\\web\\lib\\vanilla-editor.ts||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\packages\\core\\src\\ui\\editor\\extensions\\drag-and-drop.tsx||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:packages\\core\\src\\ui\\editor\\extensions\\drag-and-drop.tsx||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\lib\\editor\\index.tsx||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:apps\\web\\lib\\editor\\index.tsx||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\lib\\utils.ts||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:apps\\web\\lib\\utils.ts||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,61 +34,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "slash-command.tsx",
-              "DocumentMoniker": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\lib\\editor\\extensions\\slash-command.tsx",
-              "RelativeDocumentMoniker": "apps\\web\\lib\\editor\\extensions\\slash-command.tsx",
-              "ToolTip": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\lib\\editor\\extensions\\slash-command.tsx",
-              "RelativeToolTip": "apps\\web\\lib\\editor\\extensions\\slash-command.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-06-28T05:23:19.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "page.tsx",
-              "DocumentMoniker": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\app\\page.tsx",
-              "RelativeDocumentMoniker": "apps\\web\\app\\page.tsx",
-              "ToolTip": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\app\\page.tsx",
-              "RelativeToolTip": "apps\\web\\app\\page.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAwB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-06-28T04:53:06.272Z",
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iF Studio\\Assets\\StreamingAssets\\editor\\index.html",
+              "RelativeDocumentMoniker": "..\\..\\iF Studio\\Assets\\StreamingAssets\\editor\\index.html",
+              "ToolTip": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iF Studio\\Assets\\StreamingAssets\\editor\\index.html",
+              "RelativeToolTip": "..\\..\\iF Studio\\Assets\\StreamingAssets\\editor\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-07-11T23:37:46.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RichTextEditor.tsx",
-              "DocumentMoniker": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\ui\\RichTextEditor.tsx",
-              "RelativeDocumentMoniker": "apps\\web\\ui\\RichTextEditor.tsx",
-              "ToolTip": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\ui\\RichTextEditor.tsx",
-              "RelativeToolTip": "apps\\web\\ui\\RichTextEditor.tsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-06-28T04:51:48.032Z",
+              "Title": "rollup.config.cjs",
+              "DocumentMoniker": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\rollup.config.cjs",
+              "RelativeDocumentMoniker": "apps\\web\\rollup.config.cjs",
+              "ToolTip": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\rollup.config.cjs",
+              "RelativeToolTip": "apps\\web\\rollup.config.cjs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-11T23:31:36.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "drag-and-drop.tsx",
-              "DocumentMoniker": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\packages\\core\\src\\ui\\editor\\extensions\\drag-and-drop.tsx",
-              "RelativeDocumentMoniker": "packages\\core\\src\\ui\\editor\\extensions\\drag-and-drop.tsx",
-              "ToolTip": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\packages\\core\\src\\ui\\editor\\extensions\\drag-and-drop.tsx",
-              "RelativeToolTip": "packages\\core\\src\\ui\\editor\\extensions\\drag-and-drop.tsx",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAAALUAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "vanilla-editor.ts",
+              "DocumentMoniker": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\lib\\vanilla-editor.ts",
+              "RelativeDocumentMoniker": "apps\\web\\lib\\vanilla-editor.ts",
+              "ToolTip": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\lib\\vanilla-editor.ts",
+              "RelativeToolTip": "apps\\web\\lib\\vanilla-editor.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-06-28T01:38:58.811Z"
+              "WhenOpened": "2025-07-11T23:30:12.222Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "utils.ts",
+              "DocumentMoniker": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\lib\\utils.ts",
+              "RelativeDocumentMoniker": "apps\\web\\lib\\utils.ts",
+              "ToolTip": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\lib\\utils.ts",
+              "RelativeToolTip": "apps\\web\\lib\\utils.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-11T22:26:00.583Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.tsx",
+              "DocumentMoniker": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\lib\\editor\\index.tsx",
+              "RelativeDocumentMoniker": "apps\\web\\lib\\editor\\index.tsx",
+              "ToolTip": "C:\\Users\\akjac\\OneDrive\\Documents\\0. New World Order\\Unity\\iFS_NovelLite\\novel-lightweight\\apps\\web\\lib\\editor\\index.tsx",
+              "RelativeToolTip": "apps\\web\\lib\\editor\\index.tsx",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-11T21:21:31.208Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -7,7 +7,7 @@ const esbuild  = require('rollup-plugin-esbuild').default;
 const terser   = require('@rollup/plugin-terser').default;
 
 module.exports = {
-input: require('path').resolve(__dirname, 'lib', 'editor', 'index.tsx'),
+input: './lib/vanilla-editor.ts',
   plugins: [
     alias({
       entries: [

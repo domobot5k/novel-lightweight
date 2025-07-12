@@ -15,6 +15,9 @@ import { ImageResizer } from "./extensions/image-resizer";
 import { EditorProps } from "@tiptap/pm/view";
 import { Editor as EditorClass, Extensions } from "@tiptap/core";
 import { NovelContext } from "./provider";
+import { Editor as CoreEditor } from '@tiptap/core';
+import StarterKit from '@tiptap/starter-kit';
+import BubbleMenu from '@tiptap/extension-bubble-menu';
 
 export default function Editor({
   completionApi = "/api/generate",
@@ -223,3 +226,4 @@ export default function Editor({
     </NovelContext.Provider>
   );
 }
+export { CoreEditor as Editor, StarterKit, BubbleMenu };
