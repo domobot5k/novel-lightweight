@@ -1,6 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\apps",
+    "\\apps\\iFS_RTE",
+    "\\apps\\iFS_RTE\\dist",
+    "\\apps\\iFS_RTE\\src",
+    "\\apps\\iFS_RTE\\src\\editor",
+    "\\apps\\web\\app",
+    "\\packages\\core",
+    "\\packages\\tailwind-config",
+    "\\packages\\tsconfig"
   ],
+  "SelectedNode": "\\apps\\iFS_RTE\\dist",
   "PreviewInSolutionExplorer": true
 }
