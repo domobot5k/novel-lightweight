@@ -3,9 +3,15 @@
     "",
     "\\dist",
     "\\dist\\assets",
+    "\\node_modules\\@tiptap",
+    "\\node_modules\\@tiptap\\extension-bubble-menu",
+    "\\node_modules\\@tiptap\\extension-bubble-menu\\dist",
+    "\\node_modules\\@tiptap\\extension-floating-menu",
     "\\src",
-    "\\src\\editor"
+    "\\src\\assets",
+    "\\src\\editor",
+    "\\src\\editor\\CustomExtensions"
   ],
-  "SelectedNode": "\\dist\\assets",
-  "PreviewInSolutionExplorer": false
+  "SelectedNode": "\\src\\editor\\CustomExtensions",
+  "PreviewInSolutionExplorer": true
 }

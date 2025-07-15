@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\vite.config.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:vite.config.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\src\\main.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\main.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\src\\editor-bootstrap.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\editor-bootstrap.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\src\\index.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\index.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\src\\assets\\toolbar.css||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\assets\\toolbar.css||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\node_modules\\@tiptap\\extension-bubble-menu\\dist\\index.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:node_modules\\@tiptap\\extension-bubble-menu\\dist\\index.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\package.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,40 +39,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "main.js",
-              "DocumentMoniker": "C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\src\\main.js",
-              "RelativeDocumentMoniker": "src\\main.js",
-              "ToolTip": "C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\src\\main.js",
-              "RelativeToolTip": "src\\main.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-13T05:16:06.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\src\\index.html",
               "RelativeDocumentMoniker": "src\\index.html",
               "ToolTip": "C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\src\\index.html",
               "RelativeToolTip": "src\\index.html",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-07-13T05:16:01.717Z",
+              "WhenOpened": "2025-07-15T05:58:25.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "toolbar.css",
+              "DocumentMoniker": "C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\src\\assets\\toolbar.css",
+              "RelativeDocumentMoniker": "src\\assets\\toolbar.css",
+              "ToolTip": "C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\src\\assets\\toolbar.css",
+              "RelativeToolTip": "src\\assets\\toolbar.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-15T06:21:46.719Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "vite.config.js",
-              "DocumentMoniker": "C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\vite.config.js",
-              "RelativeDocumentMoniker": "vite.config.js",
-              "ToolTip": "C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\vite.config.js",
-              "RelativeToolTip": "vite.config.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "Title": "editor-bootstrap.js",
+              "DocumentMoniker": "C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\src\\editor-bootstrap.js",
+              "RelativeDocumentMoniker": "src\\editor-bootstrap.js",
+              "ToolTip": "C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\src\\editor-bootstrap.js",
+              "RelativeToolTip": "src\\editor-bootstrap.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-13T05:15:55.926Z",
+              "WhenOpened": "2025-07-15T04:53:22.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\node_modules\\@tiptap\\extension-bubble-menu\\dist\\index.js",
+              "RelativeDocumentMoniker": "node_modules\\@tiptap\\extension-bubble-menu\\dist\\index.js",
+              "ToolTip": "C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\node_modules\\@tiptap\\extension-bubble-menu\\dist\\index.js",
+              "RelativeToolTip": "node_modules\\@tiptap\\extension-bubble-menu\\dist\\index.js",
+              "ViewState": "AgIAABcAAAAAAAAAAAAUwCoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-15T06:23:28.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "C:\\Users\\akjac\\source\\repos\\novel-lightweight\\apps\\iFS_RTE\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-15T05:45:32.194Z",
               "EditorCaption": ""
             }
           ]

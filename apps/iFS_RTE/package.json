@@ -1,8 +1,8 @@
 {
   "name": "ifs_rte",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
@@ -11,9 +11,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "@tiptap/core": "^3.0.1",
+    "@tiptap/extension-bubble-menu": "^3.0.1",
+    "@tiptap/extension-floating-menu": "^3.0.1",
     "@tiptap/starter-kit": "^3.0.1"
   },
   "devDependencies": {

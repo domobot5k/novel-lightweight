@@ -1,0 +1,19 @@
+.bubble-menu {
+  position: absolute;
+  display: none;  
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+.bubble-menu button {
+  margin: 0 2px;
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}

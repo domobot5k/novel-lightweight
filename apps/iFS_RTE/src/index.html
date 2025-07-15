@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>iFS_RTE Editor</title>
-  <!-- link your CSS here if needed -->
+  <link rel="stylesheet" href="./assets/bubble-menu.css"/>
+  <link rel="stylesheet" href="./assets/toolbar.css"/>
 </head>
 <body>
+  <!-- Static toolbar container -->
+  <div id="toolbar" class="toolbar">
+    <!-- Inline formatting -->
+    <button data-command="toggleBold"><b>B</b></button>
+    <button data-command="toggleItalic"><i>I</i></button>
+    <button data-command="toggleStrike"><s>S</s></button>
+    <button data-command="toggleCode"><code>{ }</code></button>
+    <button data-command="toggleUnderline"><u>U</u></button>
+
+    <!-- Paragraphs and Headings -->
+    <button data-command="toggleParagraph">¶</button>
+    <button data-command="toggleHeading" data-arg='{"level":1}'>H1</button>
+    <button data-command="toggleHeading" data-arg='{"level":2}'>H2</button>
+
+    <!-- Block types -->
+    <button data-command="toggleBlockquote">?</button>
+    <button data-command="toggleCodeBlock">[code]</button>
+    <button data-command="setHorizontalRule">?</button>
+
+    <!-- Lists -->
+    <button data-command="toggleBulletList">• List</button>
+    <button data-command="toggleOrderedList">1. List</button>
+
+    <!-- Undo / Redo -->
+    <button data-command="undo">?</button>
+    <button data-command="redo">?</button>
+      </div>
+
+  
+  <!-- Editor mount point -->
   <div id="editor" style="height:100vh;"></div>
-  <script type="module" src="./main.js"></script>
+
+  <!-- Bootstrap script -->
+  <script type="module" src="./editor-bootstrap.js"></script>
 </body>
 </html>
